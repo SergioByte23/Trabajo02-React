@@ -85,11 +85,13 @@
   .app--loading{
     background-image: none;
     background-color: black;
+    
   }
   .loading{
     width: 100%;
     max-width: 350px;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-image: url('../../../public/fondocarga.jpg');
     border-radius: 0.8em;
     padding: 2em 1.5em 2.5em;
     display: flex;
@@ -98,9 +100,14 @@
     gap: 20px;
     
     
+    
 
 }
 .loading__title{
     color: rgba(255, 255, 255, 0.814);
     font-weight: 500;
+}
+
+.lds-roller{
+  margin: 0 auto;
 }
