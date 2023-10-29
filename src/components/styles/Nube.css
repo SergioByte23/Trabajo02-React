@@ -5,7 +5,7 @@
 }
 .cloud{
     width: 120px;
-    height: 70px;
+    height: 100px;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no repeat;
@@ -14,12 +14,12 @@
 .cloud:nth-child(1){
     margin-top: 30px;
     background-image: url('../../../solynube.png');
-    animation: movimiento2 15s infinite;
+    animation: movimiento2 8s infinite;
     
 }
 .cloud:nth-child(2){
     background-image: url(../../../solynube.png);
-    animation: movimiento1 15s infinite;
+    animation: movimiento1 10s infinite;
 }
 
 
