@@ -13,12 +13,12 @@
 }
 .cloud:nth-child(1){
     margin-top: 30px;
-    background-image: url('../../../public/solynube.png');
+    background-image: url('../../../solynube.png');
     animation: movimiento2 15s infinite;
     
 }
 .cloud:nth-child(2){
-    background-image: url(../../../public/solynube.png);
+    background-image: url(../../../solynube.png);
     animation: movimiento1 15s infinite;
 }
 
