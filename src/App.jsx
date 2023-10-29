@@ -3,6 +3,7 @@ import './App.css'
 import { useState } from 'react'
 import axios from 'axios'
 import WeatherCard from './components/WeatherCard'
+import ChargingScreen from './components/ChargingScreen'
 
 function App() {
   const [coords, setCoords] = useState()
@@ -43,28 +44,23 @@ function App() {
   console.log(weather);
   return (
 
-    <div className='app'>
+    <>
+    <div >
       {
         isLoading
-          ? <div class="lds-roller">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            </div>
+          ?<div className='app app--loading'> <ChargingScreen /></div>
+          
           : (
+            <div className='app'>
             <WeatherCard
               weather={weather}
               temp={temp}
             />
+            </div>
           )
       }
     </div>
-
+    </>
 
   )
 
